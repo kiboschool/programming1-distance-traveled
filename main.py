@@ -1,8 +1,13 @@
 # Write your code here
 # Follow the instructions in the tab to the right
+import math
 
 def distance(x, y):
-    pass
+    return math.sqrt((x[0] - y[0])**2 + (x[1] - y[1])**2)
+
 
 def total_distance(points):
-    pass
+    total = 0.0
+    for i in range(len(points) - 1):
+        total += distance(points[i], points[i+1])
+    return total
