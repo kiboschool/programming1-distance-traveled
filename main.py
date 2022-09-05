@@ -1,5 +1,4 @@
 # Write your code here
-# Follow the instructions in the tab to the right
 import math
 
 def distance(x, y):
